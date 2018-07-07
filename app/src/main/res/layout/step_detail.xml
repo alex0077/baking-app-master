@@ -40,5 +40,11 @@
             android:layout_height="wrap_content"
             android:textSize="16sp" />
 
+
+        <ImageView
+            android:id="@+id/image_view_step"
+            style="@style/ImageViewStep" />
+
+
     </LinearLayout>
 </ScrollView>

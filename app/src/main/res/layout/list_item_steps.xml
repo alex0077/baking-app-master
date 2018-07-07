@@ -39,7 +39,8 @@
             android:paddingRight="16dp"
             android:text="@string/recipe_short_description"
             android:textColor="@color/colorPrimaryText"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:drawableRight="@drawable/ic_arrow_forward" />
 
         <TextView
             android:id="@+id/step_long_description"

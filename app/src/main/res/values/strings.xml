@@ -9,6 +9,8 @@
     <string name="title_step_list">Steps</string>
     <string name="title_step_detail">Step Detail</string>
 
+    <string name="thumbnail_url" translatable="false">thumbnailURL</string>
+
     <string name="title_activity_about">About</string>
     <string name="about">About</string>
     <string name="tap_to_continue">Tap to continue</string>

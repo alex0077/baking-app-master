@@ -18,7 +18,8 @@
             android:id="@+id/recipe_img"
             android:layout_width="match_parent"
             android:layout_height="194dp"
-            android:src="@drawable/ic_dish" />
+            app:srcCompat="@drawable/ic_dish"
+            android:contentDescription="TODO" />
 
         <View
             android:id="@+id/recipe_name_txt"

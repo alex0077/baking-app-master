@@ -8,7 +8,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+//import com.squareup.picasso.Picasso;
 
 import com.example.bakingapp.R;
 import com.example.bakingapp.models.Recipe;
@@ -49,7 +52,15 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
         });
         holder.recipeServingCountTxt.setText(context.getString(R.string.servings_label)+recipeList.get(position).getServings());
         holder.recipeStepCountTxt.setText("Number of steps: "+recipeList.get(position).getSteps().size());
+
         holder.recipeIngredientCountTxt.setText("Number of ingredients: "+recipeList.get(position).getIngredients().size());
+
+ /*       if(!recipeList.get(position).getPicture().trim().equals(""))
+            Picasso.get().load(recipeList.get(position).getPicture()).placeholder(R.drawable.cook).into(holder.recipeImageView);
+        else{
+            Picasso.get().load(R.drawable.cook).into(holder.recipeImageView);
+        }*/
+
         holder.cookingCardAction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,6 +87,7 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
 
     public class RecipeViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private TextView recipeNameTxt;
+       // private ImageView recipeImageView;
         private ExpandableLayout expandableLayout;
         private TextView recipeIngredientCountTxt;
         private TextView recipeStepCountTxt;
@@ -85,6 +97,7 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
         RecipeViewHolder(View itemView) {
             super(itemView);
             recipeNameTxt = itemView.findViewById(R.id.recipe_name_txt);
+           // recipeImageView = itemView.findViewById(R.id.recipe_img);
             expandableLayout = itemView.findViewById(R.id.expandableLayout);
             recipeIngredientCountTxt = itemView.findViewById(R.id.recipe_ingredient_count_txt);
             recipeStepCountTxt = itemView.findViewById(R.id.recipe_step_count_txt);

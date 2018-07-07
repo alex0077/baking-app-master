@@ -13,11 +13,20 @@
         android:background="@drawable/ripple_anim"
         android:orientation="vertical">
 
+    <!--    <ImageView
+            android:id="@+id/recipe_img"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:contentDescription="@string/recipe_image_content_description"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"
+            />-->
         <ImageView
             android:id="@+id/recipe_img"
             android:layout_width="match_parent"
             android:layout_height="194dp"
-            android:src="@drawable/ic_dish" />
+            app:srcCompat="@drawable/ic_dish"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/recipe_name_txt"
@@ -33,7 +42,8 @@
             android:text="@string/recipe"
             android:textColor="@color/colorPrimaryText"
             android:textSize="21sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_arrow_drop_down" />
 
         <com.github.aakira.expandablelayout.ExpandableRelativeLayout
             android:id="@+id/expandableLayout"

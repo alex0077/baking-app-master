@@ -13,6 +13,13 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="ImageViewStep">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_image_view_step</item>
+        <item name="android:contentDescription">@string/thumbnail_url</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
